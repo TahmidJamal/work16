@@ -24,7 +24,7 @@ int main() {
 		user_says[strlen(user_says)-1] = '\0';
 		strcpy(data, user_says);
 	}
-	printf("Do you wish to delte the data in the segment?[y/n]\n");
+	printf("Do you wish to delete the data in the segment?[y/n]\n");
 	fgets(user_says,201,stdin);
 	if (user_says[0] == 'y') {
 		shmctl(shmid, IPC_RMID, NULL);
